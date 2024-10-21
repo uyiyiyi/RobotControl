@@ -17,6 +17,7 @@ DiffDriveModel::DiffDriveModel(double x0, double y0, double yaw0)
     x = x0;
     y = y0;
     yaw = yaw0;
+    dt = 0.01;
 }
 
 DiffDriveModel::~DiffDriveModel()
@@ -26,8 +27,8 @@ DiffDriveModel::~DiffDriveModel()
 void DiffDriveModel::updateState(double v, double w)
 {
     yaw += w * dt;
-    x += v * cos(yaw);
-    y += v * sin(yaw);
+    x += v * dt * cos(yaw);
+    y += v * dt * sin(yaw);
 }
 
 void DiffDriveModel::getState(double &robot_x, double &robot_y, double &robot_yaw)

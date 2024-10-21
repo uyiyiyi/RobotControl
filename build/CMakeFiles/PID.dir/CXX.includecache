@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/DiffDriveModel.h
+cmath
+-
+
+../include/PID.h
+iostream
+-
+thread
+-
+cmath
+-
+yaml-cpp/yaml.h
+-
+
+/home/yzc/RobotControl/src/PID_Control.cpp
+PID.h
+-
+DiffDriveModel.h
+/home/yzc/RobotControl/src/DiffDriveModel.h
+matplotlibcpp.h
+/home/yzc/RobotControl/src/matplotlibcpp.h
+

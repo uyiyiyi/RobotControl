@@ -80,6 +80,7 @@ PID_EXTERNAL_OBJECTS =
 ../bin/PID: CMakeFiles/PID.dir/src/PID_Control.cpp.o
 ../bin/PID: CMakeFiles/PID.dir/build.make
 ../bin/PID: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+../bin/PID: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
 ../bin/PID: CMakeFiles/PID.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/PID"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PID.dir/link.txt --verbose=$(VERBOSE)

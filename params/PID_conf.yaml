@@ -1,0 +1,9 @@
+PID:
+  Kp_pos: 1.0
+  Ki_pos: 0.01
+  Kd_pos: 1.0
+  Kp_theta: 2.0
+  Ki_theta: 0.1
+  Kd_theta: 0.01
+  max_v: 1
+  max_w: 3.14159
