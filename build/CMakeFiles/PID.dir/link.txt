@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/PID.dir/src/PID_Control.cpp.o  -o ../bin/PID 
+/usr/bin/c++  -g   CMakeFiles/PID.dir/src/PID_Control.cpp.o  -o ../bin/PID   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib /usr/lib/x86_64-linux-gnu/libpython3.8.so 

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/LQR.dir/src/LQR_Control.cpp.o  -o ../bin/LQR 
+/usr/bin/c++  -g   CMakeFiles/LQR.dir/src/LQR_Control.cpp.o  -o ../bin/LQR   -L/usr/local/lib 

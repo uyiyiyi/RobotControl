@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Linux-c++"
-	BuildStamp="20241017-0736-Experimental"
+	BuildStamp="20241021-0104-Experimental"
 	Name="yzc"
 	Generator="ctest-3.16.3"
 	CompilerName="/usr/bin/c++"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="2047"
 	TotalPhysicalMemory="64194"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="2636.3"
+	ProcessorClockFrequency="2839.91"
 	>
 	<Testing>
-		<StartDateTime>Oct 17 16:11 CST</StartDateTime>
-		<StartTestTime>1729152715</StartTestTime>
+		<StartDateTime>Oct 21 09:22 CST</StartDateTime>
+		<StartTestTime>1729473769</StartTestTime>
 		<TestList/>
-		<EndDateTime>Oct 17 16:11 CST</EndDateTime>
-		<EndTestTime>1729152715</EndTestTime>
+		<EndDateTime>Oct 21 09:22 CST</EndDateTime>
+		<EndTestTime>1729473769</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

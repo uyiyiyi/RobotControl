@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/MPC.dir/src/MPC_Control.cpp.o  -o ../bin/MPC 
+/usr/bin/c++  -g   CMakeFiles/MPC.dir/src/MPC_Control.cpp.o  -o ../bin/MPC   -L/usr/local/lib 

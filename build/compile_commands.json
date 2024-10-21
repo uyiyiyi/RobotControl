@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/yzc/RobotControl/build",
-  "command": "/usr/bin/c++   -I/home/yzc/RobotControl/include  -g   -std=gnu++17 -o CMakeFiles/PID.dir/src/PID_Control.cpp.o -c /home/yzc/RobotControl/src/PID_Control.cpp",
+  "command": "/usr/bin/c++   -I/home/yzc/RobotControl/include -I/usr/include/python3.8  -g   -std=gnu++17 -o CMakeFiles/PID.dir/src/PID_Control.cpp.o -c /home/yzc/RobotControl/src/PID_Control.cpp",
   "file": "/home/yzc/RobotControl/src/PID_Control.cpp"
 },
 {
   "directory": "/home/yzc/RobotControl/build",
-  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/LQR.dir/src/LQR_Control.cpp.o -c /home/yzc/RobotControl/src/LQR_Control.cpp",
+  "command": "/usr/bin/c++   -I/home/yzc/RobotControl/include  -g   -std=gnu++17 -o CMakeFiles/LQR.dir/src/LQR_Control.cpp.o -c /home/yzc/RobotControl/src/LQR_Control.cpp",
   "file": "/home/yzc/RobotControl/src/LQR_Control.cpp"
 },
 {
   "directory": "/home/yzc/RobotControl/build",
-  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/MPC.dir/src/MPC_Control.cpp.o -c /home/yzc/RobotControl/src/MPC_Control.cpp",
+  "command": "/usr/bin/c++   -I/home/yzc/RobotControl/include  -g   -std=gnu++17 -o CMakeFiles/MPC.dir/src/MPC_Control.cpp.o -c /home/yzc/RobotControl/src/MPC_Control.cpp",
   "file": "/home/yzc/RobotControl/src/MPC_Control.cpp"
 }
 ]
