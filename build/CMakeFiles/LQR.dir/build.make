@@ -79,6 +79,8 @@ LQR_EXTERNAL_OBJECTS =
 
 ../bin/LQR: CMakeFiles/LQR.dir/src/LQR_Control.cpp.o
 ../bin/LQR: CMakeFiles/LQR.dir/build.make
+../bin/LQR: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+../bin/LQR: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
 ../bin/LQR: CMakeFiles/LQR.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/LQR"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LQR.dir/link.txt --verbose=$(VERBOSE)

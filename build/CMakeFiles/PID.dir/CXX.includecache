@@ -9,8 +9,10 @@
 ../include/DiffDriveModel.h
 cmath
 -
+Eigen/Dense
+-
 
-../include/PID.h
+../include/pid_controller.h
 iostream
 -
 thread
@@ -21,7 +23,7 @@ yaml-cpp/yaml.h
 -
 
 /home/yzc/RobotControl/src/PID_Control.cpp
-PID.h
+pid_controller.h
 -
 DiffDriveModel.h
 /home/yzc/RobotControl/src/DiffDriveModel.h

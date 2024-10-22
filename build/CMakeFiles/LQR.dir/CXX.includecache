@@ -6,5 +6,29 @@
 
 #IncludeRegexTransform: 
 
+../include/DiffDriveModel.h
+cmath
+-
+Eigen/Dense
+-
+
+../include/lqr_controller.h
+iostream
+-
+cmath
+-
+Eigen/Dense
+-
+
 /home/yzc/RobotControl/src/LQR_Control.cpp
+iostream
+-
+thread
+-
+lqr_controller.h
+-
+DiffDriveModel.h
+/home/yzc/RobotControl/src/DiffDriveModel.h
+matplotlibcpp.h
+/home/yzc/RobotControl/src/matplotlibcpp.h
 

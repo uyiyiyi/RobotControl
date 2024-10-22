@@ -1,4 +1,4 @@
-#include<PID.h>
+#include <pid_controller.h>
 #include "DiffDriveModel.h"
 #include "matplotlibcpp.h"
 
@@ -34,7 +34,9 @@ void p2p(PID_Control PID_Instance)
 
     // 定义当前机器人状态 (x, y, theta)
     // 初始化机器人模型，假设初始位置和方向为 (0, 0, 0)
-    DiffDriveModel robot(0.0, 0.0, 0.0);
+    Eigen::VectorXd init_state;
+    init_state << 0.0, 0.0, 0,0;
+    DiffDriveModel robot(init_state);
 
     // 定义控制指令数组 (v, w)
     std::vector<double> ctrl(2, 0.0); // 初始化控制指令
@@ -110,7 +112,9 @@ void tracking(PID_Control PID_Instance)
 
     // 定义当前机器人状态 (x, y, theta)
     // 初始化机器人模型，假设初始位置和方向为 (0, 0, 0)
-    DiffDriveModel robot(0.0, 0.0, 0.0);
+    Eigen::VectorXd init_state;
+    init_state << 0.0, 0.0, 0,0;
+    DiffDriveModel robot(init_state);
 
     // 定义控制指令数组 (v, w)
     std::vector<double> ctrl(2, 0.0); // 初始化控制指令

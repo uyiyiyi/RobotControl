@@ -1,0 +1,4 @@
+#ifndef MPC_CONTROLLER
+#define MPC_CONTROLLER
+
+#endif // !MPC_CONTROLLER
