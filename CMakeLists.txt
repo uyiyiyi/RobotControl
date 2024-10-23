@@ -9,6 +9,7 @@ set(EXECUTABLE_OUTPUT_PATH "../bin")
 find_package(yaml-cpp REQUIRED)
 find_package(PythonLibs 3.8)
 find_package(Eigen3)
+find_package(OsqpEigen REQUIRED)
 
 include_directories(
     include
@@ -20,12 +21,14 @@ link_directories(/usr/local/lib)
 
 add_executable(PID ./src/PID_Control.cpp)
 add_executable(LQR ./src/LQR_Control.cpp)
-# add_executable(MPC ./src/MPC_Control.cpp)
+add_executable(MPC ./src/MPC_Control.cpp)
 
 target_include_directories(PID PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include" ${PYTHON_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}/include include) #指定头文件搜索文件夹
 target_include_directories(LQR PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include" ${PYTHON_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}/include include) #指定头文件搜索文件夹
+target_include_directories(MPC PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include" ${PYTHON_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}/include include) #指定头文件搜索文件夹
 target_link_libraries(PID ${PYTHON_LIBRARIES} yaml-cpp)
 target_link_libraries(LQR ${PYTHON_LIBRARIES} yaml-cpp)
+target_link_libraries(MPC ${PYTHON_LIBRARIES} yaml-cpp OsqpEigen::OsqpEigen)
 
 include(CTest)
 enable_testing()

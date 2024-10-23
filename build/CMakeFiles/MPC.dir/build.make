@@ -79,6 +79,10 @@ MPC_EXTERNAL_OBJECTS =
 
 ../bin/MPC: CMakeFiles/MPC.dir/src/MPC_Control.cpp.o
 ../bin/MPC: CMakeFiles/MPC.dir/build.make
+../bin/MPC: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+../bin/MPC: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2
+../bin/MPC: /usr/local/lib/libOsqpEigen.so.0.6.3
+../bin/MPC: /usr/local/lib/libosqp.so
 ../bin/MPC: CMakeFiles/MPC.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/MPC"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MPC.dir/link.txt --verbose=$(VERBOSE)

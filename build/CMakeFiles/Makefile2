@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/yzc/RobotControl/build
 # The main recursive "all" target.
 all: CMakeFiles/PID.dir/all
 all: CMakeFiles/LQR.dir/all
+all: CMakeFiles/MPC.dir/all
 
 .PHONY : all
 
@@ -65,6 +66,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ContinuousSubmit.dir/clean
+clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/NightlyTest.dir/clean
 clean: CMakeFiles/ContinuousConfigure.dir/clean
 clean: CMakeFiles/ContinuousBuild.dir/clean
@@ -90,9 +92,9 @@ clean: CMakeFiles/ExperimentalCoverage.dir/clean
 clean: CMakeFiles/ExperimentalStart.dir/clean
 clean: CMakeFiles/NightlyBuild.dir/clean
 clean: CMakeFiles/ExperimentalBuild.dir/clean
+clean: CMakeFiles/MPC.dir/clean
 clean: CMakeFiles/ExperimentalUpdate.dir/clean
 clean: CMakeFiles/ContinuousStart.dir/clean
-clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 
 .PHONY : clean
@@ -123,6 +125,33 @@ ContinuousSubmit: CMakeFiles/ContinuousSubmit.dir/rule
 CMakeFiles/ContinuousSubmit.dir/clean:
 	$(MAKE) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/clean
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ContinuousMemCheck.dir
+
+# All Build rule for target.
+CMakeFiles/ContinuousMemCheck.dir/all:
+	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/depend
+	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
+.PHONY : CMakeFiles/ContinuousMemCheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzc/RobotControl/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousMemCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzc/RobotControl/build/CMakeFiles 0
+.PHONY : CMakeFiles/ContinuousMemCheck.dir/rule
+
+# Convenience name for target.
+ContinuousMemCheck: CMakeFiles/ContinuousMemCheck.dir/rule
+
+.PHONY : ContinuousMemCheck
+
+# clean rule for target.
+CMakeFiles/ContinuousMemCheck.dir/clean:
+	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/clean
+.PHONY : CMakeFiles/ContinuousMemCheck.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/NightlyTest.dir
@@ -455,7 +484,7 @@ CMakeFiles/NightlyCoverage.dir/clean:
 CMakeFiles/PID.dir/all:
 	$(MAKE) -f CMakeFiles/PID.dir/build.make CMakeFiles/PID.dir/depend
 	$(MAKE) -f CMakeFiles/PID.dir/build.make CMakeFiles/PID.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num=3,4 "Built target PID"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num=5,6 "Built target PID"
 .PHONY : CMakeFiles/PID.dir/all
 
 # Build rule for subdir invocation for target.
@@ -800,6 +829,33 @@ CMakeFiles/ExperimentalBuild.dir/clean:
 .PHONY : CMakeFiles/ExperimentalBuild.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/MPC.dir
+
+# All Build rule for target.
+CMakeFiles/MPC.dir/all:
+	$(MAKE) -f CMakeFiles/MPC.dir/build.make CMakeFiles/MPC.dir/depend
+	$(MAKE) -f CMakeFiles/MPC.dir/build.make CMakeFiles/MPC.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num=3,4 "Built target MPC"
+.PHONY : CMakeFiles/MPC.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MPC.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzc/RobotControl/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MPC.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzc/RobotControl/build/CMakeFiles 0
+.PHONY : CMakeFiles/MPC.dir/rule
+
+# Convenience name for target.
+MPC: CMakeFiles/MPC.dir/rule
+
+.PHONY : MPC
+
+# clean rule for target.
+CMakeFiles/MPC.dir/clean:
+	$(MAKE) -f CMakeFiles/MPC.dir/build.make CMakeFiles/MPC.dir/clean
+.PHONY : CMakeFiles/MPC.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ExperimentalUpdate.dir
 
 # All Build rule for target.
@@ -852,33 +908,6 @@ ContinuousStart: CMakeFiles/ContinuousStart.dir/rule
 CMakeFiles/ContinuousStart.dir/clean:
 	$(MAKE) -f CMakeFiles/ContinuousStart.dir/build.make CMakeFiles/ContinuousStart.dir/clean
 .PHONY : CMakeFiles/ContinuousStart.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ContinuousMemCheck.dir
-
-# All Build rule for target.
-CMakeFiles/ContinuousMemCheck.dir/all:
-	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/depend
-	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yzc/RobotControl/build/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
-.PHONY : CMakeFiles/ContinuousMemCheck.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzc/RobotControl/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ContinuousMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yzc/RobotControl/build/CMakeFiles 0
-.PHONY : CMakeFiles/ContinuousMemCheck.dir/rule
-
-# Convenience name for target.
-ContinuousMemCheck: CMakeFiles/ContinuousMemCheck.dir/rule
-
-.PHONY : ContinuousMemCheck
-
-# clean rule for target.
-CMakeFiles/ContinuousMemCheck.dir/clean:
-	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/clean
-.PHONY : CMakeFiles/ContinuousMemCheck.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ContinuousTest.dir

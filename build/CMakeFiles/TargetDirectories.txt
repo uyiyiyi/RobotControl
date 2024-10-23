@@ -2,6 +2,7 @@
 /home/yzc/RobotControl/build/CMakeFiles/test.dir
 /home/yzc/RobotControl/build/CMakeFiles/package_source.dir
 /home/yzc/RobotControl/build/CMakeFiles/ContinuousSubmit.dir
+/home/yzc/RobotControl/build/CMakeFiles/ContinuousMemCheck.dir
 /home/yzc/RobotControl/build/CMakeFiles/NightlyTest.dir
 /home/yzc/RobotControl/build/CMakeFiles/ContinuousConfigure.dir
 /home/yzc/RobotControl/build/CMakeFiles/ContinuousBuild.dir
@@ -29,7 +30,7 @@
 /home/yzc/RobotControl/build/CMakeFiles/package.dir
 /home/yzc/RobotControl/build/CMakeFiles/NightlyBuild.dir
 /home/yzc/RobotControl/build/CMakeFiles/ExperimentalBuild.dir
+/home/yzc/RobotControl/build/CMakeFiles/MPC.dir
 /home/yzc/RobotControl/build/CMakeFiles/ExperimentalUpdate.dir
 /home/yzc/RobotControl/build/CMakeFiles/ContinuousStart.dir
-/home/yzc/RobotControl/build/CMakeFiles/ContinuousMemCheck.dir
 /home/yzc/RobotControl/build/CMakeFiles/ContinuousTest.dir

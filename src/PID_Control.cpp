@@ -1,28 +1,6 @@
 #include <pid_controller.h>
 #include "DiffDriveModel.h"
-#include "matplotlibcpp.h"
-
-namespace plt = matplotlibcpp; // 为 matplotlibcpp 命名空间简化命名
-
-void draw_trajectory(const std::vector<std::vector<double>> &trajectory) {
-    // 将轨迹点一次性绘制
-    std::vector<double> traj_x, traj_y;
-    for (const auto &point : trajectory) {
-        traj_x.push_back(point[0]);
-        traj_y.push_back(point[1]);
-    }
-    plt::plot(traj_x, traj_y, "bo"); // 蓝色圆圈表示轨迹点
-}
-
-void draw_robot(double robot_x, double robot_y, double robot_theta) {
-    // 绘制机器人当前位置和方向（航向角）
-    double arrow_x = std::cos(robot_theta); // 箭头x方向
-    double arrow_y = std::sin(robot_theta); // 箭头y方向
-    
-    // 绘制机器人位置为红点，箭头表示航向
-    plt::plot({robot_x}, {robot_y}, "ro");
-    plt::arrow(robot_x, robot_y, arrow_x, arrow_y, "r", "k"); // 黑色箭头表示航向
-}
+#include "draw.h"
 
 void p2p(PID_Control PID_Instance)
 {

@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yzc/RobotControl/include 
+CXX_INCLUDES = -I/home/yzc/RobotControl/include -I/usr/include/python3.8 -isystem /usr/local/include/osqp -isystem /usr/include/eigen3 
 

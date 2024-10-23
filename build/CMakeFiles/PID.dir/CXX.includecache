@@ -12,6 +12,10 @@ cmath
 Eigen/Dense
 -
 
+../include/draw.h
+matplotlibcpp.h
+../include/matplotlibcpp.h
+
 ../include/pid_controller.h
 iostream
 -
@@ -27,6 +31,6 @@ pid_controller.h
 -
 DiffDriveModel.h
 /home/yzc/RobotControl/src/DiffDriveModel.h
-matplotlibcpp.h
-/home/yzc/RobotControl/src/matplotlibcpp.h
+draw.h
+/home/yzc/RobotControl/src/draw.h
 

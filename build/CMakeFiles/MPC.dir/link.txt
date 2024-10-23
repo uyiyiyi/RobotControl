@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/MPC.dir/src/MPC_Control.cpp.o  -o ../bin/MPC   -L/usr/local/lib 
+/usr/bin/c++  -g   CMakeFiles/MPC.dir/src/MPC_Control.cpp.o  -o ../bin/MPC   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib /usr/lib/x86_64-linux-gnu/libpython3.8.so /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.6.2 /usr/local/lib/libOsqpEigen.so.0.6.3 /usr/local/lib/libosqp.so 

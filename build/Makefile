@@ -157,6 +157,19 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
 # Target rules for targets named NightlyTest
 
 # Build rule for target.
@@ -482,6 +495,19 @@ ExperimentalBuild/fast:
 .PHONY : ExperimentalBuild/fast
 
 #=============================================================================
+# Target rules for targets named MPC
+
+# Build rule for target.
+MPC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MPC
+.PHONY : MPC
+
+# fast build rule for target.
+MPC/fast:
+	$(MAKE) -f CMakeFiles/MPC.dir/build.make CMakeFiles/MPC.dir/build
+.PHONY : MPC/fast
+
+#=============================================================================
 # Target rules for targets named ExperimentalUpdate
 
 # Build rule for target.
@@ -506,19 +532,6 @@ ContinuousStart: cmake_check_build_system
 ContinuousStart/fast:
 	$(MAKE) -f CMakeFiles/ContinuousStart.dir/build.make CMakeFiles/ContinuousStart.dir/build
 .PHONY : ContinuousStart/fast
-
-#=============================================================================
-# Target rules for targets named ContinuousMemCheck
-
-# Build rule for target.
-ContinuousMemCheck: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ContinuousMemCheck
-.PHONY : ContinuousMemCheck
-
-# fast build rule for target.
-ContinuousMemCheck/fast:
-	$(MAKE) -f CMakeFiles/ContinuousMemCheck.dir/build.make CMakeFiles/ContinuousMemCheck.dir/build
-.PHONY : ContinuousMemCheck/fast
 
 #=============================================================================
 # Target rules for targets named ContinuousTest
@@ -560,6 +573,33 @@ src/LQR_Control.cpp.s:
 	$(MAKE) -f CMakeFiles/LQR.dir/build.make CMakeFiles/LQR.dir/src/LQR_Control.cpp.s
 .PHONY : src/LQR_Control.cpp.s
 
+src/MPC_Control.o: src/MPC_Control.cpp.o
+
+.PHONY : src/MPC_Control.o
+
+# target to build an object file
+src/MPC_Control.cpp.o:
+	$(MAKE) -f CMakeFiles/MPC.dir/build.make CMakeFiles/MPC.dir/src/MPC_Control.cpp.o
+.PHONY : src/MPC_Control.cpp.o
+
+src/MPC_Control.i: src/MPC_Control.cpp.i
+
+.PHONY : src/MPC_Control.i
+
+# target to preprocess a source file
+src/MPC_Control.cpp.i:
+	$(MAKE) -f CMakeFiles/MPC.dir/build.make CMakeFiles/MPC.dir/src/MPC_Control.cpp.i
+.PHONY : src/MPC_Control.cpp.i
+
+src/MPC_Control.s: src/MPC_Control.cpp.s
+
+.PHONY : src/MPC_Control.s
+
+# target to generate assembly for a file
+src/MPC_Control.cpp.s:
+	$(MAKE) -f CMakeFiles/MPC.dir/build.make CMakeFiles/MPC.dir/src/MPC_Control.cpp.s
+.PHONY : src/MPC_Control.cpp.s
+
 src/PID_Control.o: src/PID_Control.cpp.o
 
 .PHONY : src/PID_Control.o
@@ -597,6 +637,7 @@ help:
 	@echo "... test"
 	@echo "... package_source"
 	@echo "... ContinuousSubmit"
+	@echo "... ContinuousMemCheck"
 	@echo "... NightlyTest"
 	@echo "... ContinuousConfigure"
 	@echo "... ContinuousBuild"
@@ -624,13 +665,16 @@ help:
 	@echo "... package"
 	@echo "... NightlyBuild"
 	@echo "... ExperimentalBuild"
+	@echo "... MPC"
 	@echo "... ExperimentalUpdate"
 	@echo "... ContinuousStart"
-	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... src/LQR_Control.o"
 	@echo "... src/LQR_Control.i"
 	@echo "... src/LQR_Control.s"
+	@echo "... src/MPC_Control.o"
+	@echo "... src/MPC_Control.i"
+	@echo "... src/MPC_Control.s"
 	@echo "... src/PID_Control.o"
 	@echo "... src/PID_Control.i"
 	@echo "... src/PID_Control.s"
