@@ -19,6 +19,8 @@ matplotlibcpp.h
 ../include/mpc_controller.h
 iostream
 -
+thread
+-
 cmath
 -
 Eigen/Dense

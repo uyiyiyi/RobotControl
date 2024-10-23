@@ -1,6 +1,7 @@
 #ifndef MPC_CONTROLLER
 #define MPC_CONTROLLER
 #include <iostream>
+#include <thread>
 #include <cmath>
 #include <Eigen/Dense>
 // osqp-eigen库
@@ -28,11 +29,11 @@ private:
     MatrixXd A, B, A_big, B_big, Q, R, Q_big, R_big, H, f;
     int state_dim = 3;
     int control_dim = 2;
-    void calABQRHf(const std::vector<double>& v_theta, const Eigen::VectorXd& X_0, const Eigen::VectorXd& X_ref);
-    VectorXd solveQP();
 public:
     mpc_controller(/* args */);
     ~mpc_controller();
+    void calABQRHf(const std::vector<double>& v_theta, const Eigen::VectorXd& X_0, const Eigen::VectorXd& X_ref);
+    VectorXd solveQP();
 };
 
 mpc_controller::mpc_controller(/* args */)
