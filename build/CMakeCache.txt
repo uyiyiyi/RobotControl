@@ -302,9 +302,6 @@ DART_TESTING_TIMEOUT:STRING=1500
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 
-//The directory containing a CMake configuration file for Eigen.
-Eigen_DIR:PATH=Eigen_DIR-NOTFOUND
-
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
 
@@ -319,12 +316,6 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
-
-//The directory containing a CMake configuration file for OSQP-CPP.
-OSQP-CPP_DIR:PATH=OSQP-CPP_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for OSQP.
-OSQP_DIR:PATH=OSQP_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for OsqpEigen.
 OsqpEigen_DIR:PATH=/usr/local/lib/cmake/OsqpEigen
@@ -359,20 +350,8 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 //Path to a program.
 SVNCOMMAND:FILEPATH=/usr/bin/svn
 
-//The directory containing a CMake configuration file for osqp++.
-osqp++_DIR:PATH=osqp++_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for osqp-cpp.
-osqp-cpp_DIR:PATH=osqp-cpp_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for osqp.
 osqp_DIR:PATH=/usr/local/lib/cmake/osqp
-
-//The directory containing a CMake configuration file for osqp_cpp.
-osqp_cpp_DIR:PATH=osqp_cpp_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for osqpcpp.
-osqpcpp_DIR:PATH=osqpcpp_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for yaml-cpp.
 yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
